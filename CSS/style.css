@@ -1,0 +1,122 @@
+/* configuracoes gerais para navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans'; 
+}
+
+/* parte da barra de navegação */
+
+.nav-link{ 
+
+color: #40E0D0;
+
+}
+
+.btn-outline-info{
+
+    color:#40E0D0;
+    border-color:#40E0D0 ;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('../imagens/imagem1.png') no-repeat 50% 50%;
+    background-size: cover;
+    margin-top: 0;
+}
+
+header h1{
+
+    color: white;
+    font-family: 'Open Sans' ;
+    text-align: left;
+    font-size: 48px;
+    font-weight: 500;
+    
+}
+
+/* parte explicativa*/
+
+.exp-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.exp-section1 h4{
+    color: #000000;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: right;
+}
+.exp-section1 .subheading{
+    color: #40E0D0;
+    font-size: 25px;
+}
+
+.exp-section1 p{
+font-size: 30px;
+text-align: right;
+}
+
+.exp-section1 .row
+{
+    margin-top: 10%;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 80%;
+}
+ 
+/* parte com icones e texto */
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #000000;
+  }
+
+  .text-center h1{
+
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+  }
+  .text-center h2{
+
+    font-size: 20px;
+    color: white;
+    
+  }
+  .row svg{
+    color:#40E0D0;
+  }
+
+  .row h6{ 
+
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  /* parte com imagem e cta */
+
+  .col-lg-5 p{
+
+    color:#000000;
+  }
+
+
+/* parte do footer */
+
+footer {
+    background-color: #000000;
+    padding-top: 5em;
+    padding-bottom: 40px;
+    border-top: 5px solid #292929;
+  }
