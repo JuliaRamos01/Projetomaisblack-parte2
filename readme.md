@@ -8,3 +8,13 @@
 <p>06/02: Upload das páginas com a navbar reparada e página de "Nossos serviços"</p> 
 
 <p>09/02: Modificações na página "Nossos seriços" e conserto de bugs</p>
+
+<p>10/02: Consertos na página "Nossos serviços"</p>
+
+<h1> O que devemos melhorar</h1>
+
+- A parte da navbar tá puxando a fonte errada (unificar a fonte) e na parte de "contatos" tá com um espaçamento maior;
+- Trocar a parte da explicação em "Nossos serviços" pq n está responsiva;
+- Trocar o restante dos texto na parte de "Nossos serviços";
+- Ajeitar o footer;
+- Trocar as fontes da "Home";
