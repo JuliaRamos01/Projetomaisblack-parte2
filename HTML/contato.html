@@ -27,33 +27,62 @@
 </head>
 
 <body>
-<!-- PARTE DA NAVBAR -->
+    <!-- PARTE DA NAVBAR -->
 
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000000;">
-    <div class="container">
-        <img width="120em" src="../imagens/logo.png" alt="nosso logo"> <!-- PARTE DA LOGO -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../HTML/index.html">Home</a>
-                </li><!-- Home -->
-                <li class="nav-item">
-                    <a class="nav-link" href="../HTML/nossosservicos.html">Nossos serviços</a>
-                </li><!-- Nossos serviços -->
-                <li class="nav-item">
-                    <a class="nav-link" href="../HTML/quemsomos.html">Quem somos</a>
-                </li><!-- Quem somos -->
-                <li class="nav-item">
-                    <a class="nav-link" href="../HTML/contato.html">Contato</a>
-                </li><!-- Contato -->
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000000;">
+        <div class="container">
+            <img width="120em" src="../imagens/logo.png" alt="nosso logo"> <!-- PARTE DA LOGO -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/index.html">Home</a>
+                    </li><!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/nossosservicos.html">Nossos serviços</a>
+                    </li><!-- Nossos serviços -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/quemsomos.html">Quem somos</a>
+                    </li><!-- Quem somos -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/contato.html">Contato</a>
+                    </li><!-- Contato -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CHATBOX -->
+    <div class="chat-box">
+        <div class="client">
+            <img src="../imagens/logohdpi.png" alt="avatar" />
+            <div class="client-info">
+                <h5>Tire aqui as suas dúvidas!</h5>
+            </div>
+        </div>
+
+        <div class="chats">
+            <div class="client-chat">Boa tarde!</div>
+            <div class="site-chat">Boa tarde! Em que posso ajudar?</div>
+            <div class="client-chat">Estou com dúvida em como criar minha conta</div>
+            <div class="site-chat">É bem simples! Você pode se cadastrar através do nosso app,
+                que pode ser encontrado na loja de aplicativos do seu celular</div>
+            <div class="client-chat">Entendi, muito obrigado!</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Digite aqui..." />
+            <button class="send-btn">
+                <img src="../imagens/button.png" alt="Enviar">
+            </button>
         </div>
     </div>
-</nav>
+
+    <div class="chat-btn">
+        <img src="../imagens/chatbox-icon.png" alt="chat-box icon" />
+    </div>
 
     <!--Formulário-->
     <div id='wrapper'>
@@ -123,7 +152,7 @@
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -139,6 +168,10 @@
 
     <!-- PARTE DE ÍCONES - FONT AWESOME -->
     <script src="https://kit.fontawesome.com/7d235f40dc.js" crossorigin="anonymous"></script>
+
+    <!-- código do script do chatbox -->
+    <script src="../Javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </body>
 
