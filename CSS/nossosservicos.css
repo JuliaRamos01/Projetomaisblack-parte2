@@ -8,16 +8,9 @@
 
 /* parte da barra de navegação */
 
-.nav-link {
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
 
-  color: #40E0D0;
-
-}
-
-.btn-outline-info {
-
-  color: #40E0D0;
-  border-color: #40E0D0;
+  color:#40E0D0;
 }
 
 header {
@@ -213,106 +206,6 @@ header p {
 
 }
 
-/* parte do passo a passo */
-.counter {
-  background: #40E0D0;
-  height: 840px;
-  padding-top: 380px;
-  overflow: hidden;
-}
-
-.counter__content {
-  padding: 0px 50px;
-}
-
-.counter__item {
-  background: #000000;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  height: 255px;
-  width: 255px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-.counter__item::before {
-  position: absolute;
-  left: -1px;
-  bottom: -2px;
-  height: 636px;
-  width: 636px;
-  border-left: 1px solid #333333;
-  border-top: 1px solid #333333;
-  content: "";
-  z-index: -1;
-}
-
-.counter__item.second__item {
-  margin-top: -185px;
-}
-
-.counter__item.second__item:before {
-  left: -316px;
-  bottom: -65px;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: none;
-  border-top: none;
-}
-
-.counter__item.four__item {
-  margin-top: -185px;
-}
-
-.counter__item.four__item:before {
-  left: -380px;
-  bottom: -380px;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: none;
-  border-top: none;
-}
-
-.counter__item.third__item:before {
-  left: -65px;
-  bottom: -317px;
-}
-
-.counter__item__text {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.counter__item__text h2 {
-  font-size: 60px;
-  color: #ffffff;
-  font-weight: 700;
-  margin-bottom: 6px;
-  margin-top: 18px;
-}
-
-.counter__item__text p {
-  color: #ffffff;
-  margin-bottom: 0;
-}
-
-.counter__item__text .icon {
-  color: #00FFFF;
-}
-
-
 /* parte do footer */
 
 footer {
@@ -320,6 +213,14 @@ footer {
   padding-top: 5em;
   padding-bottom: 40px;
   border-top: 5px solid #292929;
+}
+
+.logobaixo{
+  display: block;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto
+  
 }
 
 .footer_ul_amrc {
@@ -387,6 +288,11 @@ footer {
   margin: 0 12px;
 }
 
+.foote_bottom_ul_amrc li a:hover {
+  color:#40E0D0;
+  margin: 0 12px;
+}
+
 .social_footer_ul {
   display: table;
   margin: 15px auto 0 auto;
@@ -400,8 +306,8 @@ footer {
 }
 
 .social_footer_ul li a {
-  color: #CCC;
-  border: 1px solid #CCC;
+  color: #40E0D0;
+  border: 1px solid #40E0D0;
   padding: 8px;
   border-radius: 50%;
 }
@@ -411,6 +317,7 @@ footer {
   height: 20px;
   text-align: center;
 }
+
 
 /* chatbox */
 
