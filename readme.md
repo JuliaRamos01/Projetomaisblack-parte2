@@ -13,10 +13,9 @@
 
 <p>12/02: Consertos na "Home" e "Quem somos" / Debugs gerais</p>
 
+<p>13/02: Consertos gerais nas páginas, cofiguração da "Quem somos" e adição de textos</p>
+
 <h1> O que devemos melhorar</h1>
 
-- A parte da navbar tá puxando a fonte errada (unificar a fonte) e na parte de "contatos" tá com um espaçamento maior;
-- Trocar a parte da explicação em "Nossos serviços" pq n está responsiva;
-- Trocar o restante dos texto na parte de "Nossos serviços";
-- Trocar as fontes da "Home";
-- Terminar de debugar a interferência da página "Quem somos";
+- A parte da navbar tá com um espaçamento maior;
+- Temos que add o plugin de acessibilidade;

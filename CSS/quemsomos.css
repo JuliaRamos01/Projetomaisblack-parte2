@@ -24,15 +24,21 @@
 header {
   width: 100%;
   height: 100vh;
-  background: url('../imagens/maisblackfundo.png') no-repeat 50% 50%;
+  background: url('../imagens/imagemquemsomosheader.png') no-repeat 50% 50%;
   background-size: cover;
   margin-top: 0;
 }
 
 
 /*Sobre a +black*/
+
 #abouut-area {
     background-color: #ffffff;
+}
+
+.img-fluid{
+
+margin-top: 20px;
 }
 
 .main-title {
@@ -40,14 +46,15 @@ color: #000000;
 margin: 0 0 65px 0;
 font-size: 50px;
 text-align: center;
-font-weight: bolder;
+font-family: 'PT Sans';
+margin-top: 15px;
 }
 
 
 .about-title {
     font-size: 30px;
     color: #000000;
-    font-weight: bold;
+    font-family: 'Lora';
 }
 
 .col-md-6 p {
@@ -55,10 +62,11 @@ font-weight: bolder;
     color: #000000;
     text-align: justify;
     font-weight: bolder;
+    margin-bottom: 50px;
     
 }
 
-/* Serviços */
+/* Você sabia */
 
 .services-area{
   padding-top: 5rem;
@@ -72,7 +80,17 @@ font-weight: bolder;
   
 }
 
-.service-box i, .service-box h4 {
+.col-12 h3{ 
+  margin-bottom: 30px;
+  font-family: 'PT Sans';
+}
+
+.col-12 h4{
+
+  font-family: 'Lora';
+}
+
+.service-box i, .service-box h5 {
   transition: .5s;
 }
 
@@ -82,13 +100,15 @@ font-weight: bolder;
   color: rgb(255, 255, 255);
 }
 
-.service-box h4 {
+.service-box h5 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: white;
+  text-align: center;
+  font-family: 'Lora';
 }
 
-.service-box:hover > i, .service-box:hover > h4 {
+.service-box:hover > i, .service-box:hover > h5 {
   color: #40e0d2;
 }
 
@@ -157,140 +177,101 @@ font-weight: bolder;
 }
 
 .carousel-indicators .active {
-  background-color: #40e0d2;
+  background-color: white;
 }
 
+/* Nosso time  */
 
-/* Time*/
+/*.team-area{
+background-image: url('../imagens/nossotime.jpg'); ---Tentar encaixar isso melhor na terceira entrega, pois trava o código
+}*/
 
-/* ApresentaçãoTime */
-
-section{
-  background-color: #000000;
-  padding-top: 0px;
-  color: #ffffff;
+.textos h3 {
+text-align: center;
+margin-top: 30px;
+font-family: 'PT Sans';
+font-size: 45px;
 }
 
-.containerc { /*debugar aqui pq tá interferindo na navbar*/
-  margin-top: 0px;
-  padding-top: 50px;
-  
-}
-.container .row .col-lg-4 {
-  display: flex;
-  justify-content: center
+.textos h6{
+
+font-family: 'Lora';
+
 }
 
-.card {
-  position: relative;
-  padding: 0;
-  margin: 0 !important;
-  border-radius: 20px;
-  overflow: hidden;
-  max-width: 280px;
-  max-height: 340px;
-  cursor: pointer;
-  border: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
-}
-
-.card .card-image {
-  width: 100%;
-  max-height: 340px
-}
-
-.card .card-image img {
-  width: 100%;
-  max-height: 340px;
-  object-fit: cover
-}
-
-.card .card-content {
-  position: absolute;
-  bottom: -180px;
-  color: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(15px);
-  min-height: 140px;
-  width: 100%;
-  transition: bottom .4s ease-in;
-  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
-  border-top: 1px solid rgba(0, 0, 0, 0.2)
-}
-
-.card:hover .card-content {
-  bottom: 0px
-}
-
-.card:hover .card-content h4,
-.card:hover .card-content h5 {
-  transform: translateY(10px);
-  opacity: 1
-}
-
-.card .card-content h4,
-.card .card-content h5 {
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+.single-team .inner {
   text-align: center;
-  transition: 0.8s;
-  font-weight: 500;
-  opacity: 0;
-  transform: translateY(-40px);
-  transition-delay: 0.2s
+	margin-bottom: 35px;
+	border: 1px solid #e5eaf0;
+	padding: 5px 5px 0px;
 }
 
-.card .card-content h5 {
-  transition: 0.5s;
-  font-weight: 200;
-  font-size: 0.8rem;
-  letter-spacing: 2px
+.single-team .inner .team-img {
+	position: relative;
 }
 
-.card .card-content .social-icons {
-  list-style: none;
-  padding: 0
+.single-team .inner .team-img img {
+	width: 100%;
 }
 
-.card .card-content .social-icons li {
-  margin: 10px;
-  transition: 0.5s;
-  transition-delay: calc(0.15s * var(--i));
-  transform: translateY(50px)
+.single-team .inner .team-img::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
 }
 
-.card:hover .card-content .social-icons li {
-  transform: translateY(20px)
+.single-team .inner .team-img:hover::after {
+	opacity: 0.4;
 }
 
-.card .card-content .social-icons li a {
-  color: rgb(0, 0, 0)
+.single-team .inner .team-content {
+	padding: 22px 0px 0px;
 }
 
-.card .card-content .social-icons li a span {
-  font-size: 1.3rem
+.single-team .inner .team-content h4 {
+	font-size: 18px;
+	font-weight: 400;
+  font-family: 'PT Sans';
 }
 
-@media(max-width: 991.5px) {
-  .container {
-      margin-top: 20px
-  }
-
-  .container .row .col-lg-4 {
-      margin: 20px 0px
-  }
-  
+.single-team .inner .team-content h5 {
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	color: #7d91aa;
 }
 
+.single-team .inner .team-content a {
+	display: inline-block;
+	padding: 2px;
+	margin: 0 3px;
+	font-size: 16px;
+}
+
+.team-social {
+	background: #f3f6fa;
+	width: 50%;
+	padding-top: 4px;
+	margin: auto;
+	border-radius: 15px 15px 0px 0px;
+	margin-top: 17px;
+}
 
 /* Linha do Tempo*/
 
+.time-line{
+
+  margin-bottom: 30px;
+
+}
 .main-timeline4 {
   overflow: hidden;
   position: relative;
    
-  
 }
 
 .main-timeline4:after,
