@@ -1,4 +1,8 @@
-<!doctype html>
+<%@ page import="model.Cliente" %>
+<%@ page import="dao.ClienteDAO"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -12,16 +16,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- cÃ³digo css do css -->
-    <link rel="stylesheet" href="../CSS/contato.css">
+    <!-- código css do css -->
+    <link rel="stylesheet" href="./CSS/contato.css">
 
-    <!-- CÃ“DIGO FONTE OPEN SANS -->
+    <!-- CÓDIGO FONTE OPEN SANS -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
-    <!-- tÃ­tulo -->
+    <!-- título -->
     <title>Contato</title>
 
 </head>
@@ -31,7 +35,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000000;">
         <div class="container">
-            <img width="120em" src="../imagens/logo.png" alt="nosso logo"> <!-- PARTE DA LOGO -->
+            <img width="120em" src="./imagens/logo.png" alt="nosso logo"> <!-- PARTE DA LOGO -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,16 +43,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../HTML/index.html">Home</a>
+                        <a class="nav-link" href="./HTML/index.html">Home</a>
                     </li><!-- Home -->
                     <li class="nav-item">
-                        <a class="nav-link" href="../HTML/nossosservicos.html">Nossos serviÃ§os</a>
-                    </li><!-- Nossos serviÃ§os -->
+                        <a class="nav-link" href="./HTML/nossosservicos.html">Nossos serviços</a>
+                    </li><!-- Nossos serviços -->
                     <li class="nav-item">
-                        <a class="nav-link" href="../HTML/quemsomos.html">Quem somos</a>
+                        <a class="nav-link" href="./HTML/quemsomos.html">Quem somos</a>
                     </li><!-- Quem somos -->
                     <li class="nav-item">
-                        <a class="nav-link" href="../HTML/contato.html">Contato</a>
+                        <a class="nav-link" href="./contato.html">Contato</a>
                     </li><!-- Contato -->
                 </ul>
             </div>
@@ -58,35 +62,35 @@
     <!-- CHATBOX -->
     <div class="chat-box">
         <div class="client">
-            <img src="../imagens/imgchatbox.png" alt="avatar" />
+            <img src="./imagens/imgchatbox.png" alt="avatar" />
             <div class="client-info">
-                <h5>Tire aqui as suas dÃºvidas!</h5>
+                <h5>Tire aqui as suas dúvidas!</h5>
             </div>
         </div>
 
         <div class="chats">
             <div class="client-chat">Boa tarde!</div>
             <div class="site-chat">Boa tarde! Em que posso ajudar?</div>
-            <div class="client-chat">Estou com dÃºvida em como criar minha conta</div>
-            <div class="site-chat">Ã‰ bem simples! VocÃª pode se cadastrar atravÃ©s do nosso app,
+            <div class="client-chat">Estou com dúvida em como criar minha conta</div>
+            <div class="site-chat">É bem simples! Você pode se cadastrar através do nosso app,
                 que pode ser encontrado na loja de aplicativos do seu celular</div>
             <div class="client-chat">Entendi, muito obrigado!</div>
         </div>
         <div class="chat-input">
             <input type="text" placeholder="Digite aqui..." />
             <button class="send-btn">
-                <img src="../imagens/button.png" alt="Enviar">
+                <img src="./imagens/button.png" alt="Enviar">
             </button>
         </div>
     </div>
 
     <div class="chat-btn">
-        <img src="../imagens/chatbox-icon.png" alt="chat-box icon" />
+        <img src="./imagens/chatbox-icon.png" alt="chat-box icon" />
     </div>
 
-    <!--FormulÃ¡rio-->
+    <!--Formulário-->
     <div id='wrapper'>
-        <form action='' class='form'>
+        <form action='ControleCliente' class='form'>
             <p class='field required half'>
                 <label class='label required' for='name'>Digite seu nome</label>
                 <input class='text-input' id='name' name='name' required type='text'>
@@ -102,6 +106,12 @@
             <p class='field'>
                 <input class='button' type='submit' value='Enviar'>
             </p>
+            <div>
+				<% String mensagem = (String) request.getAttribute("mensagem");
+					if (mensagem != null)
+						out.print(mensagem);
+				%>
+			</div>
         </form>
     </div>
 
@@ -112,12 +122,12 @@
             <div class="row">
                 <div class=" col-sm-4 col-md col-sm-4  col-12 col">
                     <div class="container">
-                        <img class="logobaixo" width="140em" src="../imagens/logo.png" alt="nosso logo"> 
+                        <img class="logobaixo" width="140em" src="./imagens/logo.png" alt="nosso logo"> 
                         <ul class="foote_bottom_ul_amrc">
-                            <li><a href="../HTML/index.html">Home</a></li>
-                            <li><a href="../HTML/nossosservicos.html">Nossos serviÃ§os</a></li>
-                            <li><a href="../HTML/quemsomos.html">Quem somos</a></li>
-                            <li><a href="../HTML/contato.html">Contato</a></li>
+                            <li><a href="./HTML/index.html">Home</a></li>
+                            <li><a href="./HTML/nossosservicos.html">Nossos serviços</a></li>
+                            <li><a href="./HTML/quemsomos.html">Quem somos</a></li>
+                            <li><a href="./HTML/contato.html">Contato</a></li>
                         </ul>
                         <ul class="social_footer_ul">
                             <li><a href="#"><i class="fab fa-github"></i></a></li>
@@ -143,11 +153,11 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <!-- PARTE DE ÃCONES - FONT AWESOME -->
+    <!-- PARTE DE ÍCONES - FONT AWESOME -->
     <script src="https://kit.fontawesome.com/7d235f40dc.js" crossorigin="anonymous"></script>
 
-    <!-- cÃ³digo do script do chatbox -->
-    <script src="../Javascript/script.js"></script>
+    <!-- código do script do chatbox -->
+    <script src="./Javascript/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </body>
