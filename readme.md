@@ -15,7 +15,12 @@
 
 <p>13/02: Consertos gerais nas páginas, cofiguração da "Quem somos" e adição de textos</p>
 
-<h1> O que devemos melhorar</h1>
+<h1> O que devemos melhorar para a última entrega? </h1>
 
 - A parte da navbar tá com um espaçamento maior;
 - Temos que add o plugin de acessibilidade;
+- O site da hospedagem tá crashando a parte de "Contatos"
+
+<h1> Links dos arquivos</h1>
+
+<p>Link do vídeo: https://drive.google.com/file/d/19NXXLmS6k-pRpSbxVnAXckLk0FVkVDBE/view?usp=sharing </p>
